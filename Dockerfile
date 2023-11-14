@@ -1,4 +1,5 @@
 FROM eclipse-temurin:17
+ENV SPRING_DATASOURCE_URL=jdbc:mariadb://mariadb:3306/cardb
 VOLUME /tmp
 EXPOSE 8080
 ARG JAR FILE
